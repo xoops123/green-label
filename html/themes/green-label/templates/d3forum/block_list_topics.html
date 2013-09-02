@@ -1,0 +1,58 @@
+<{if $block.full_view == true}>
+
+<{foreach item=topic from=$block.topics}>
+<{strip}>
+<div class="d3f_topics">
+<div class="d3f_avatar">
+<img src="<{$topic.first_uid|xoops_user_avatarize}>" /> 
+</div>
+<div class="d3f_say">
+<{* トピックが所属するフォーラム名 *}>
+<p class="d3f_forum_title"><a href="<{$block.mod_url}>/index.php?forum_id=<{$topic.forum_id}>"><{$topic.forum_title}></a></p>
+
+<{* トピック *}>
+<p class="d3f_topic_title">
+<a href="<{$block.mod_url}>/index.php?topic_id=<{$topic.id}>#post_id<{$topic.last_post_id}>">
+<{* 注目マークをつける場合 *}>
+<{if $topic.u2t_marked}><img src="<{$block.mod_imageurl}>/block_marked.gif" alt="<{$block.lang_alt_marked}>" /><{/if}>
+	<{* displays the last post's subject or topic title
+	<{if $block.disp_last_subject }>
+	<{$topic.last_subject}>
+	<{else}>
+	<{$topic.title}>
+	<{/if}> *}>
+<{$topic.title}>
+</a>
+<{* 未解決の場合 *}>
+<{if ! $topic.solved}><img src="<{$block.mod_imageurl}>/block_unsolved.gif" alt="<{$block.lang_alt_unsolved}>" /><{/if}>
+</p>
+<p class="d3f_last_post_time">更新日時：<{$topic.last_post_time|xugj_date:"n月j日 H時i分":"最新":"新着":false}></p>
+<p class="d3f_first_uname"><{$topic.first_uname}>　さんの投稿</p>
+
+<{* 
+返信数<{$topic.replies}>
+投稿数<{$topic.views}>
+
+<{if $topic.guest_name}>
+	最終投稿ゲスト名<{$topic.guest_name}>
+<{else}>
+	最終投稿者<{$topic.last_uname}>
+<{/if}>
+
+最初のポストID<{$topic.first_post_id}>　
+最初のポスト時間<{$topic.first_post_time}>　
+最初のポスト時間フォーマットあり<{$topic.first_post_time_formatted}>　
+最初のユーザーID<{$topic.first_uid}>　
+最初のユーザー名<{$topic.first_uname}>　
+最後のUID<{$topic.last_uid}>　
+最後のユーザー名<{$topic.last_uname}>　
+*}>
+
+</div>
+</div>
+<{/strip}>
+<{/foreach}>
+
+<{/if}>
+
+<div><a href="<{$xoops_url}>/modules/d3forum/index.php?forum_id=1">ご訪問帳</a></div>
