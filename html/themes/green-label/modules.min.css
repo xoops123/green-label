@@ -275,7 +275,7 @@ body.wordpress .large_thumbnail{
 	position:absolute;
 	top:10px;
 	left:10px;
-	width:80%;
+	width:100%;
 	padding-left:150px;
 }
 @media screen and (max-width: 1024px) 	{
@@ -294,7 +294,7 @@ body.wordpress .large_thumbnail{
 
 
 #xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-title h2 {
-	width:90%;
+	width:98%;
 }
 #xpress_wrap #xpress_content .xpress-post .xpress-post-header .xpress-post-excerpt {
 	position:relative;
@@ -330,12 +330,12 @@ body.wordpress .large_thumbnail{
 .xpress-post-entry {
 	margin-top:10px;
 	padding:14px 10px 10px 10px;
-	font-size:14px;
+	font-size:16px;
 	line-height:24px;
 }
 .xpress-post-entry p {
 	text-indent:1em;
-	font-size:14px;
+	font-size:16px;
 	line-height:24px;
 }
 .xpress-post-entry img {
@@ -363,3 +363,13 @@ body.wordpress .large_thumbnail{
 }
 
 /* End Wordpress (XpressME) */
+
+
+/* d3download  */
+.d3downloads_outer textarea#extra ,
+.d3downloads_outer textarea#desc ,
+.d3downloads_outer input#url ,
+.d3downloads_outer input#title {
+	width:90%;
+}
+
