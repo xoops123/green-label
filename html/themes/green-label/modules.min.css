@@ -1,5 +1,4 @@
 /* d3forum etc */
-input#subject,
 #liaise_1 textarea ,
 #postform input ,
 #postform textarea {
@@ -8,6 +7,30 @@ input#subject,
 .d3f_postform {
 	width:100%;
 }
+input#subject ,
+input#guest_name ,
+input#guest_url ,
+input#antispam_yomigana {
+	width:90%;
+	height:40px;
+	line-height:2;
+}
+input#contents_submit ,
+input#contents_preview {
+	width:100px;
+}
+
+input#u2t_marked ,
+input#d3f_post_advanced_options_onoff ,
+input#smiley ,
+input#xcode ,
+input#br ,
+input#number_entity ,
+input#special_entity ,
+input#solved {
+	width:50px;
+}
+
 .d3f_order_ctrl {
 	width:100%;
 	height:40px;
@@ -28,6 +51,10 @@ h2.head {
 .d3f_wrap .d3f_info even ,
 .d3f_wrap .d3f_info even a {
 	font-size: 80%;
+}
+
+table.outer {
+	width:100%;
 }
 
 /* d3f topics */
