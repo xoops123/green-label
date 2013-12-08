@@ -5,7 +5,7 @@
 Name="green-label"
 Depends=Legacy_RenderSystem,legacy
 Url="http://xoops123.com/"
-Version="0.1"
+Version="0.12"
 
 [Theme]
 RenderSystem=Legacy_RenderSystem

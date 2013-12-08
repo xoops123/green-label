@@ -15,7 +15,6 @@ body 				{
   height: auto !important;
   height: 100%;
   /* Negative indent footer by it's height */
-  margin: 0 auto -50px;
 }
 img {
   max-width: none;
@@ -89,7 +88,6 @@ h2,h3,h4 {
 	padding:5px 10px;
 	margin:3px 10px 15px;
 }
-#push ,
 #footer ,
 footer {
 	width: 100%;
@@ -105,7 +103,6 @@ footer a {
 }
 
 #footer_menu {
-	padding-top:10px;
 }
 
 #footer .container {
@@ -117,7 +114,13 @@ pre {
 	overflow: auto; 
 	font-size: 12px;
 }
-
+label {
+  display: inline;
+  margin: 0;
+}
+.d3downloads_even label {
+	margin-top:-5px;
+}
 
 /* XOOPS Code & Quote */
 .xoopsCode {

@@ -1,3 +1,7 @@
+input {
+	width:auto;
+}
+
 /* d3forum etc */
 #liaise_1 textarea ,
 #postform input ,
@@ -154,10 +158,14 @@ body.wordpress .xpress-body {
 	margin:0;
 	padding:0;
 }
-body.wordpress .xpress-body #xpress_page{
-	width:100%;
-	margin:0;
+#xpress_page{
+	max-width: 980px;
+	margin:0 auto;
 	padding:0;
+}
+#xpress_page img {
+	max-width: 100%;
+	margin:10px 0 20px;
 }
 
 #xpress-header-bar,
@@ -167,7 +175,6 @@ body.wordpress .xpress-body #xpress_page{
 #xpress_wrap {
 	float: left;
 	width: 100%;
-	margin:0 auto;
 	padding:10px 12px 30px 0;
 	clear: both;
 }
@@ -373,9 +380,17 @@ body.wordpress .large_thumbnail{
 	margin:0 20px 0 35px;
 	padding:0 20px 0 20px;
 }
-.xpress-post-entry h3 {
+#xpress_content .xpress-post-entry h3 {
 	font-size:20px;
 	line-height:24px;
+	padding:5px 20px;
+	margin:20px 0 15px;
+}
+#xpress_content .xpress-post-entry h4 {
+	font-size:18px;
+	line-height:20px;
+	padding:5px 20px;
+	margin:25px 15px 15px;
 }
 
 #xpress-comments-block {
