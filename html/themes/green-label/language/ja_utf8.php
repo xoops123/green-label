@@ -25,5 +25,5 @@ define('_THEME_LANGUAGE_COMMENT', 'コメントする');
 define('_THEME_LANGUAGE_MAIN_MENU', 'メインメニュー');
 define('_THEME_LANGUAGE_LANGUAGE_GUEST', 'ゲスト');
 define('_THEME_LANGUAGE_NEWPMSG', '新着メッセージ');
-defined('_MD_D3FORUM_VOTEPOINTDSCBEST') || define('_MD_D3FORUM_VOTEPOINTDSCBEST','いいね！');
+//defined('_MD_D3FORUM_VOTEPOINTDSCBEST') || define('_MD_D3FORUM_VOTEPOINTDSCBEST','いいね！');
 ?>
